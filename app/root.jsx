@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import rootStyles from "~/styles/root.css"
+import rootStyles from "~/styles/root.css";
 
 /**
  * @returns {import("@remix-run/node").LinkDescriptor[]}
@@ -16,7 +16,20 @@ export const links = () => [
   {
     rel: "stylesheet",
     href: rootStyles,
-  }
+  },
+];
+
+/**
+ * @returns {import("@remix-run/node").MetaDescriptor[]}
+ */
+export const meta = () => [
+  {
+    title: "Personal Finance Manager",
+  },
+  {
+    name: "viewport",
+    content: "width=device-width,initial-scale=1",
+  },
 ];
 
 const App = () => {
@@ -36,6 +49,6 @@ const App = () => {
       </body>
     </html>
   );
-}
+};
 
-export default App
+export default App;

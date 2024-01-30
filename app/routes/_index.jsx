@@ -1,6 +1,12 @@
-export const meta = () => {
-  return [{ title: "New Remix App" }];
-};
+
+/**
+ * @returns {import("@remix-run/node").MetaDescriptor[]}
+ */
+export const meta = () => [
+  {
+    title: "Personal Finance Manager | Index Page",
+  },
+];
 
 export default function Index() {
   return (
